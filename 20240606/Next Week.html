@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人網站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .topbar {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            position: fixed;
+            top: 100px; /* 调整位置以避免遮挡 */
+            left: 0;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            z-index: 9999; /* 确保导航栏位于顶层 */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            color: #666;
+        }
+
+        section {
+            padding-top: 60px; /* 补偿导航栏高度 */
+        }
+
+        section:target {
+            scroll-margin-top: 60px; /* 保持距离导航栏的距离 */
+        }
+
+        .container {
+            margin-top: 120px;
+        }
+
+        .round {
+            border-radius: 50%;
+        }
+
+        img {
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .photo {
+            display: inline-block;
+            margin-right: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topbar">
+        <header>
+            <h1>我的個人網站</h1>
+        </header>
+    </div>
+
+    <nav >
+        <ul >
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#certificate">證照</a></li>
+            <li><a href="#experience">工作經歷</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+            <li><a href="#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <section id="about">
+            <h2 class="container">關於我</h2>
+            <img src="img/20190918135414-tommy-shelby-peaky-blinders.jpeg" alt="" width="175px" height="175px"
+                class="round">
+            <div class="bdtext" style="margin-left: 100px;">
+                <p style="margin-left: 150px;">我是莊博勳，歡迎來到我的個人網站！</p>
+                <p style="margin-left: 150px;">學歷：亞東科技大學，計算機科學碩士</p>
+                <p style="margin-left: 150px;">興趣：編程、攝影、旅行</p>
+            </div>
+        </section>
+
+        <section id="certificate" class="clear clearfix scroll">
+            <h2>證照</h2>
+            <p>這裡將展示我的一些證照。</p>
+            <div class="clear clearfix photo">
+                <img src="img/丙檢證照.jpg" alt="">
+                <h3 style="margin: 15px;">修飛機乙級</h3>
+            </div>
+            <div class="clear clearfix photo">
+                <img src="img/汽車駕照.jpg" alt="">
+                <h3 style="margin: 15px;">修船乙級</h3>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>工作經歷</h2>
+            <p>這裡將展示我的一些工作經歷。</p>
+            <div class="clear clearfix photo">
+                <img src="img/丙檢證照.jpg" alt="">
+                <h3 style="margin: 15px;">律師</h3>
+            </div>
+            <div class="clear clearfix photo">
+                <img src="img/汽車駕照.jpg" alt="">
+                <h3 style="margin: 15px;">工程師</h3>
+            </div>
+        </section>
+
+        <section id="portfolio" class="clear clearfix">
+            <h2>作品集</h2>
+            <p>這裡將展示我的一些作品。</p>
+            <h3>March</h3><br>
+            <a href="">20240321</a>
+            <a href="../20240325/index.html">20240325</a>
+            <a href="">20240328</a><br>
+            <h3>April</h3><br><a href="../20240401/index.html">20240401</a>
+            <a href="../20240408/index.html">20240408</a>
+            <a href="../20240411/index.html">20240411</a>
+            <a href="../20240415/index.html">20240415</a>
+            <a href="">20240429</a><br>
+            <h3>May</h3><br><a href="">20240502</a>
+            <a href="../20240509/個人的一頁式網頁.html">20240509</a>
+            <a href="../20240513/flex.html">20240513</a>
+            <a href="../20240516/index.html">20240516</a>
+            <a href="../20240520/latout01.html">20240520</a>
+            <a href="../20240523/layout02.html">20240523</a>
+        </section>
+
+        <section id="contact">
+            <h2>聯絡方式</h2>
+            <p>如果你想聯絡我，可以通過以下方式：</p>
+            <ul>
+                <li>Email: <a href="mailto:112111215＠mail.aeust.edu.tw">112111215＠mail.aeust.edu.tw</a></li>
+                <li>電話：+123456789</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
